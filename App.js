@@ -1,42 +1,60 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const jsxHeading = <h1 className="root">"Namaste react using JSX" </h1>;
 
-// const Title = () => {
-//     return <h1 tabIndex={5}> Component Composition </h1>
-// };
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5296974.png"></img>
+            </div>
 
-// React Element
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Cart</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            
+        </div>
 
-const elem = <span>     +     React element</span>
 
-const Title = (
-    <h1>Hello this is react Component
-        {elem}
-    </h1>
-    
-)
+    )
+}
 
-const Fn = () => (
-    <h1 className="fn">This is a function</h1>
-)
+const RestaurantCard = () => {
+    return(
+        <div className="res-card">
+            <h3>Meghana Foods</h3>
+        </div>
+    )
+}
 
-const HeadingComponent = () => (
-    <div id="container">
-            {Title}
-            <Fn />
-            <Fn ></Fn>
-            <h1>{1000+200}</h1>
-            <h2>{console.log( "Namaste World")}</h2>
-        
-        <h1>Namaste React HeadingComponent </h1>
-        
-    </div>
-);
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search">Search</div>
+            <div className="res-container">
+                <RestaurantCard />
+            </div>
+        </div>
+    )
+}
+
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+            <Body />
+        </div>
+    )
+}
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent/>);
+root.render(<AppLayout/>);
 

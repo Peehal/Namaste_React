@@ -1,0 +1,29 @@
+.header{
+    margin:2px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(27, 26, 26)
+}
+
+.logo{
+    padding: 10px;
+    width: 85px
+;}
+
+.nav-items > ul {
+    display: flex;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+.nav-items >ul > li{
+    padding : 10px; 
+    margin: 10px;
+}
+
+.res-card{
+    margin-left: 2px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+}
