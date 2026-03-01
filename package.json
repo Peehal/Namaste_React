@@ -17,18 +17,20 @@
   "author": "Peehal Sinha",
   "type": "commonjs",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
-    "test": "jest"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest", 
+    "server": "json-server --watch db.json --port 3001"
   },
   "devDependencies": {
+    "json-server": "^1.0.0-beta.12",
     "parcel": "^2.16.4"
   },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
-  }, 
-  "browserslist":[
+  },
+  "browserslist": [
     "last 2 version"
   ]
 }

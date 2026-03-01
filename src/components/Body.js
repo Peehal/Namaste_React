@@ -1,12 +1,23 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Body = () => {
 
-    let [listOfRestaurants, setListOfRestaurant] = useState(resList);
+    let [listOfRestaurants, setListOfRestaurant] = useState([]);
 
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        const data = await fetch("http://localhost:3001/restaurants");
+        const jsonData = await data.json();
+
+        console.log(jsonData);
+
+        setListOfRestaurant(jsonData)
+    };
 
   return (
 
