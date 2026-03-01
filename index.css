@@ -229,7 +229,6 @@
   width: 80%;
 }
 
-/* Animation */
 @keyframes shimmer {
   0% {
     background-position: -400px 0;
@@ -237,4 +236,28 @@
   100% {
     background-position: 400px 0;
   }
+}
+
+.login {
+  padding: 8px 20px;
+  margin-left: 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff4d94, #ff1f7a);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 31, 122, 0.3);
+}
+
+.login:active {
+  transform: scale(0.96);
 }
