@@ -1,5 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 
 const Body = () => {
@@ -18,6 +19,10 @@ const Body = () => {
 
         setListOfRestaurant(jsonData)
     };
+
+    if(listOfRestaurants.length == 0){
+      return <Shimmer />;
+    }
 
   return (
 
