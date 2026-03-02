@@ -6,6 +6,9 @@ import Shimmer from "./Shimmer";
 const Body = () => {
 
     const [listOfRestaurants, setListOfRestaurant] = useState([]);
+
+    const[allrestaurant, setallrestaurant] = useState([]);
+
     const [searchText, setsearchText] = useState("");
 
     useEffect(() => {
@@ -18,7 +21,8 @@ const Body = () => {
 
         console.log(jsonData);
 
-        setListOfRestaurant(jsonData)
+        setListOfRestaurant(jsonData);
+        setallrestaurant(jsonData)
     };
 
   return listOfRestaurants.length == 0 ? <Shimmer /> : (
@@ -34,7 +38,7 @@ const Body = () => {
         onClick={() => {
           const filteredRestaurant = listOfRestaurants.filter((res) => res.name.toLowerCase().includes(searchText.toLowerCase()) );
 
-          setListOfRestaurant(filteredRestaurant);
+          setallrestaurant(filteredRestaurant);
 
         }}>Search
         </button>
@@ -53,7 +57,7 @@ const Body = () => {
 
       <div className="res-container">
         {
-            listOfRestaurants.map((restaurant) => (
+            allrestaurant.map((restaurant) => (
                 <RestaurantCard
                 key={restaurant.restaurant_id}
                 resData={restaurant}
