@@ -19,7 +19,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest", 
+    "test": "jest",
     "server": "json-server --watch db.json --port 3001"
   },
   "devDependencies": {
@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3"
   },
   "browserslist": [
     "last 2 version"
