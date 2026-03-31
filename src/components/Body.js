@@ -20,9 +20,9 @@ const Body = () => {
     const jsonData = await data.json();
 
     const restaurants =
-     jsonData?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle
-    ?.restaurants;
-
+  jsonData?.data?.cards?.find(
+    (card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
     setListOfRestaurant(restaurants);
     setallrestaurant(restaurants);
   };
