@@ -1,0 +1,353 @@
+const mockMenu = {
+  statusCode: 0,
+  data: {
+    statusMessage: "done successfully",
+    cards: [
+      {
+        card: {
+          card: {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+            text: "Starbucks Coffee",
+            headerStyling: {
+              textColor: "text_Highest_Emphasis",
+              textVariant: "header_H3_Black",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            info: {
+              id: "1003295",
+              name: "Starbucks Coffee",
+              city: "Jamshedpur",
+              cloudinaryImageId:
+                "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/26/38c3dd3a-0642-42ef-9f33-e6255b603040_1003295.JPG",
+              locality: "Narayanakripa",
+              areaName: "Jamshedpur Inner Circle",
+              costForTwoMessage: "₹400 for two",
+              cuisines: ["Beverages", "Cafe"],
+              avgRating: 4.6,
+              totalRatingsString: "245 ratings",
+              sla: {
+                deliveryTime: 15,
+                slaString: "10-15 MINS",
+                lastMileTravelString: "1.5 km",
+              },
+            },
+          },
+        },
+      },
+      {
+        groupedCard: {
+          cardGroupMap: {
+            REGULAR: {
+              cards: [
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Top Picks",
+                      itemCards: [
+                        {
+                          card: {
+                            info: {
+                              id: "197696723",
+                              name: "Hogwarts Golden Vanilla Frappuccino",
+                              category: "Top Picks",
+                              description:
+                                "A magical vanilla frappuccino inspired by Harry Potter with rich coffee, caramel notes, and a themed choco topper.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2026/3/24/e53257cb-a841-4ae0-a80b-e76ee22c0c15_2cc2ab12-2e95-4be1-bdf6-33178dce1141.jpg",
+                              isVeg: 1,
+                              price: 55000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.7",
+                                  ratingCountV2: "120",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "197696724",
+                              name: "Java Chip Frappuccino",
+                              category: "Top Picks",
+                              description:
+                                "Blended beverage with mocha sauce, chocolate chips, milk, and coffee topped with whipped cream.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/5d86e56d-2f4c-4d1e-8f3d-3d40f46e0a4e_javachip.jpg",
+                              isVeg: 1,
+                              price: 42000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCountV2: "98",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "197696725",
+                              name: "Cold Coffee",
+                              category: "Top Picks",
+                              description:
+                                "Classic cold coffee blended to creamy perfection and served chilled.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/coldcoffee.jpg",
+                              isVeg: 1,
+                              price: 28000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.4",
+                                  ratingCountV2: "85",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Hot Coffees",
+                      itemCards: [
+                        {
+                          card: {
+                            info: {
+                              id: "300001",
+                              name: "Caffè Americano",
+                              category: "Hot Coffees",
+                              description:
+                                "Espresso shots topped with hot water for a rich, bold coffee experience.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/americano.jpg",
+                              isVeg: 1,
+                              price: 25000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.3",
+                                  ratingCountV2: "76",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "300002",
+                              name: "Cappuccino",
+                              category: "Hot Coffees",
+                              description:
+                                "Dark, rich espresso balanced with steamed milk and a light layer of foam.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/cappuccino.jpg",
+                              isVeg: 1,
+                              price: 30000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.6",
+                                  ratingCountV2: "110",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "300003",
+                              name: "Caffè Latte",
+                              category: "Hot Coffees",
+                              description:
+                                "A smooth and creamy blend of espresso and steamed milk.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/latte.jpg",
+                              isVeg: 1,
+                              price: 32000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCountV2: "94",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Cold Beverages",
+                      itemCards: [
+                        {
+                          card: {
+                            info: {
+                              id: "400001",
+                              name: "Iced Caffè Latte",
+                              category: "Cold Beverages",
+                              description:
+                                "Smooth espresso and chilled milk served over ice.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/icedlatte.jpg",
+                              isVeg: 1,
+                              price: 33000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.4",
+                                  ratingCountV2: "67",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "400002",
+                              name: "Chocolate Frappuccino",
+                              category: "Cold Beverages",
+                              description:
+                                "Rich chocolate blended with milk and ice, topped with whipped cream.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/chocofrappe.jpg",
+                              isVeg: 1,
+                              price: 39000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.7",
+                                  ratingCountV2: "130",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "400003",
+                              name: "Mango Dragonfruit Refresher",
+                              category: "Cold Beverages",
+                              description:
+                                "A fruity and refreshing drink with tropical mango notes.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/mango.jpg",
+                              isVeg: 1,
+                              price: 36000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCountV2: "74",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Food",
+                      itemCards: [
+                        {
+                          card: {
+                            info: {
+                              id: "500001",
+                              name: "Chocolate Brownie",
+                              category: "Food",
+                              description:
+                                "Soft and rich chocolate brownie, perfect with coffee.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/brownie.jpg",
+                              isVeg: 1,
+                              price: 18000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.6",
+                                  ratingCountV2: "58",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "500002",
+                              name: "Butter Croissant",
+                              category: "Food",
+                              description:
+                                "Flaky and buttery croissant baked fresh.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/croissant.jpg",
+                              isVeg: 1,
+                              price: 21000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.3",
+                                  ratingCountV2: "49",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        {
+                          card: {
+                            info: {
+                              id: "500003",
+                              name: "Veg Club Sandwich",
+                              category: "Food",
+                              description:
+                                "Layered sandwich stuffed with fresh vegetables and cheese.",
+                              imageId:
+                                "FOOD_CATALOG/IMAGES/CMS/2024/5/1/sandwich.jpg",
+                              isVeg: 1,
+                              price: 29000,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCountV2: "64",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+    ],
+  },
+};
+
+export default mockMenu;

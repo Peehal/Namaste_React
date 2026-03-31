@@ -1,141 +1,423 @@
 {
-  "restaurants": [
-    {
-      "restaurant_id": "KFC_JMS_101",
-      "name": "KFC",
-      "imageId": "kfc.jpg",
-      "brand": "KFC India",
-      "city": "Jamshedpur",
-      "locality": "Bistupur",
-      "address": "Main Road, Bistupur, Jamshedpur",
-      "geo": { "lat": 22.8055, "lng": 86.2029 },
-      "cuisines": ["American", "Fast Food", "Burgers", "Fried Chicken"],
-      "avg_rating": 3.8,
-      "total_ratings": "12K+",
-      "cost_for_two": 500,
-      "cost_for_two_message": "₹500 for two",
-      "delivery_time_minutes": 28,
-      "delivery_time_range": "25-30 mins",
-      "distance_km": 3.2,
-      "is_pure_veg": false,
-      "is_promoted": true,
-      "promoted_text": "Ad • Sponsored",
-      "availability": { "is_open": true, "opens_at": "10:00 AM", "closes_at": "11:00 PM" },
-      "offers": [{ "offer_id": "OFFER50", "title": "50% OFF up to ₹100" }],
-      "delivery_fee": 35,
-      "surge_fee": 0,
-      "platform_fee": 5,
-      "badges": ["Best Seller"],
-      "serviceability": { "delivery_available": true, "self_pickup_available": true }
-    },
-    {
-      "restaurant_id": "MOCHA_JMS_102",
-      "name": "Mocha",
-      "imageId": "mocha.jpg",
-      "brand": "Mocha Cafe",
-      "city": "Jamshedpur",
-      "locality": "Bistupur",
-      "address": "Bistupur Main Road, Jamshedpur",
-      "geo": { "lat": 22.8048, "lng": 86.2035 },
-      "cuisines": ["Cafe", "Italian", "Desserts"],
-      "avg_rating": 4.0,
-      "total_ratings": "3K+",
-      "cost_for_two": 1200,
-      "cost_for_two_message": "₹1200 for two",
-      "delivery_time_minutes": 32,
-      "delivery_time_range": "30-35 mins",
-      "distance_km": 2.5,
-      "is_pure_veg": false,
-      "is_promoted": false,
-      "availability": { "is_open": true, "opens_at": "11:00 AM", "closes_at": "11:30 PM" },
-      "offers": [],
-      "delivery_fee": 40,
-      "surge_fee": 0,
-      "platform_fee": 5,
-      "badges": ["Premium"],
-      "serviceability": { "delivery_available": true, "self_pickup_available": true }
-    },
-    {
-      "restaurant_id": "CHAI_JMS_103",
-      "name": "Chai Break",
-      "imageId": "chai.jpg",
-      "brand": "Chai Break",
-      "city": "Jamshedpur",
-      "locality": "Sakchi",
-      "address": "Sakchi Market Area, Jamshedpur",
-      "geo": { "lat": 22.8065, "lng": 86.2021 },
-      "cuisines": ["Cafe", "Snacks", "Beverages"],
-      "avg_rating": 4.2,
-      "total_ratings": "2K+",
-      "cost_for_two": 300,
-      "cost_for_two_message": "₹300 for two",
-      "delivery_time_minutes": 22,
-      "delivery_time_range": "20-25 mins",
-      "distance_km": 1.8,
-      "is_pure_veg": true,
-      "is_promoted": false,
-      "availability": { "is_open": true, "opens_at": "9:00 AM", "closes_at": "10:00 PM" },
-      "offers": [],
-      "delivery_fee": 25,
-      "surge_fee": 0,
-      "platform_fee": 5,
-      "badges": ["Pocket Friendly"],
-      "serviceability": { "delivery_available": true, "self_pickup_available": true }
-    },
-    {
-      "restaurant_id": "KAIDI_JMS_104",
-      "name": "Kaidi Kitchen",
-      "imageId": "kaidi.jpg",
-      "brand": "Kaidi Kitchen",
-      "city": "Jamshedpur",
-      "locality": "Bistupur",
-      "address": "Bistupur Plaza, Jamshedpur",
-      "geo": { "lat": 22.8059, "lng": 86.2042 },
-      "cuisines": ["North Indian", "Chinese"],
-      "avg_rating": 4.1,
-      "total_ratings": "4K+",
-      "cost_for_two": 900,
-      "cost_for_two_message": "₹900 for two",
-      "delivery_time_minutes": 35,
-      "delivery_time_range": "30-40 mins",
-      "distance_km": 3.1,
-      "is_pure_veg": false,
-      "is_promoted": true,
-      "promoted_text": "Ad • Sponsored",
-      "availability": { "is_open": true, "opens_at": "12:00 PM", "closes_at": "11:00 PM" },
-      "offers": [{ "offer_id": "KK20", "title": "20% OFF up to ₹150" }],
-      "delivery_fee": 35,
-      "surge_fee": 0,
-      "platform_fee": 5,
-      "badges": ["Best Seller"],
-      "serviceability": { "delivery_available": true, "self_pickup_available": true }
-    },
-    {
-      "restaurant_id": "DOM_JMS_106",
-      "name": "Domino's Pizza",
-      "imageId": "dominos.jpg",
-      "brand": "Domino's",
-      "city": "Jamshedpur",
-      "locality": "Bistupur",
-      "address": "Bistupur Circle, Jamshedpur",
-      "geo": { "lat": 22.8050, "lng": 86.2010 },
-      "cuisines": ["Pizza", "Fast Food"],
-      "avg_rating": 4.2,
-      "total_ratings": "8K+",
-      "cost_for_two": 600,
-      "cost_for_two_message": "₹600 for two",
-      "delivery_time_minutes": 24,
-      "delivery_time_range": "20-25 mins",
-      "distance_km": 2.2,
-      "is_pure_veg": false,
-      "is_promoted": false,
-      "availability": { "is_open": true, "opens_at": "10:00 AM", "closes_at": "11:00 PM" },
-      "offers": [],
-      "delivery_fee": 30,
-      "surge_fee": 0,
-      "platform_fee": 5,
-      "badges": ["Fast Delivery"],
-      "serviceability": { "delivery_available": true, "self_pickup_available": true }
+  "menu": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+              "text": "Starbucks Coffee",
+              "headerStyling": {
+                "textColor": "text_Highest_Emphasis",
+                "textVariant": "header_H3_Black"
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "1003295",
+                "name": "Starbucks Coffee",
+                "city": "Jamshedpur",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/26/38c3dd3a-0642-42ef-9f33-e6255b603040_1003295.JPG",
+                "locality": "Narayanakripa",
+                "areaName": "Jamshedpur Inner Circle",
+                "costForTwoMessage": "₹400 for two",
+                "cuisines": [
+                  "Beverages",
+                  "Cafe"
+                ],
+                "avgRating": 4.6,
+                "totalRatingsString": "245 ratings",
+                "sla": {
+                  "deliveryTime": 15,
+                  "slaString": "10-15 MINS",
+                  "lastMileTravelString": "1.5 km"
+                }
+              }
+            }
+          }
+        },
+        {
+          "groupedCard": {
+            "cardGroupMap": {
+              "REGULAR": {
+                "cards": [
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Top Picks",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "197696723",
+                                "name": "Hogwarts Golden Vanilla Frappuccino",
+                                "category": "Top Picks",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "A magical vanilla frappuccino inspired by Harry Potter with rich coffee, caramel notes, and a themed choco topper.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/3/24/e53257cb-a841-4ae0-a80b-e76ee22c0c15_2cc2ab12-2e95-4be1-bdf6-33178dce1141.jpg",
+                                "isVeg": 1,
+                                "price": 55000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.7",
+                                    "ratingCountV2": "120"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "197696724",
+                                "name": "Java Chip Frappuccino",
+                                "category": "Top Picks",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Blended beverage with mocha sauce, chocolate chips, milk, and coffee topped with whipped cream.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/5d86e56d-2f4c-4d1e-8f3d-3d40f46e0a4e_javachip.jpg",
+                                "isVeg": 1,
+                                "price": 42000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.5",
+                                    "ratingCountV2": "98"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "197696725",
+                                "name": "Cold Coffee",
+                                "category": "Top Picks",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Classic cold coffee blended to creamy perfection and served chilled.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/coldcoffee.jpg",
+                                "isVeg": 1,
+                                "price": 28000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.4",
+                                    "ratingCountV2": "85"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Hot Coffees",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "300001",
+                                "name": "Caffè Americano",
+                                "category": "Hot Coffees",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Espresso shots topped with hot water for a rich, bold coffee experience.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/americano.jpg",
+                                "isVeg": 1,
+                                "price": 25000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.3",
+                                    "ratingCountV2": "76"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "300002",
+                                "name": "Cappuccino",
+                                "category": "Hot Coffees",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Dark, rich espresso balanced with steamed milk and a light layer of foam.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/cappuccino.jpg",
+                                "isVeg": 1,
+                                "price": 30000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.6",
+                                    "ratingCountV2": "110"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "300003",
+                                "name": "Caffè Latte",
+                                "category": "Hot Coffees",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "A smooth and creamy blend of espresso and steamed milk.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/latte.jpg",
+                                "isVeg": 1,
+                                "price": 32000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.5",
+                                    "ratingCountV2": "94"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Cold Beverages",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "400001",
+                                "name": "Iced Caffè Latte",
+                                "category": "Cold Beverages",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Smooth espresso and chilled milk served over ice.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/icedlatte.jpg",
+                                "isVeg": 1,
+                                "price": 33000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.4",
+                                    "ratingCountV2": "67"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "400002",
+                                "name": "Chocolate Frappuccino",
+                                "category": "Cold Beverages",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Rich chocolate blended with milk and ice, topped with whipped cream.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/chocofrappe.jpg",
+                                "isVeg": 1,
+                                "price": 39000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.7",
+                                    "ratingCountV2": "130"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "400003",
+                                "name": "Mango Dragonfruit Refresher",
+                                "category": "Cold Beverages",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "A fruity and refreshing drink with tropical mango notes.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/mango.jpg",
+                                "isVeg": 1,
+                                "price": 36000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.5",
+                                    "ratingCountV2": "74"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Food",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "500001",
+                                "name": "Chocolate Brownie",
+                                "category": "Food",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Soft and rich chocolate brownie, perfect with coffee.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/brownie.jpg",
+                                "isVeg": 1,
+                                "price": 18000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.6",
+                                    "ratingCountV2": "58"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "500002",
+                                "name": "Butter Croissant",
+                                "category": "Food",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Flaky and buttery croissant baked fresh.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/croissant.jpg",
+                                "isVeg": 1,
+                                "price": 21000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.3",
+                                    "ratingCountV2": "49"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "500003",
+                                "name": "Veg Club Sandwich",
+                                "category": "Food",
+                                "costForTwo": "40000",
+                                "costForTwoMessage": "₹400 for two",
+                                "cuisines": [
+                                  "Beverages",
+                                  "Cafe",
+                                  "Coffee",
+                                  "Desserts"
+                                ],
+                                "description": "Layered sandwich stuffed with fresh vegetables and cheese.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/sandwich.jpg",
+                                "isVeg": 1,
+                                "price": 29000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.5",
+                                    "ratingCountV2": "64"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
     }
-  ]
+  }
 }
