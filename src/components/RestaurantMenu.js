@@ -53,6 +53,7 @@
 
 import { useState, useEffect } from "react";
 import "./RestaurantMenu.css";
+import MenuShimmerShimmer from "./MenuShimmer";
 
 const RestaurantMenu = () => {
     const [resInfo, setresInfo] = useState(null);
@@ -62,11 +63,13 @@ const RestaurantMenu = () => {
     }, []);
 
     const fetchMenu = async () => {
-        const data = await fetch("http://localhost:3001/menu");
+        const data = await fetch("http://localhost:3001/menu2");
         const json = await data.json();
         console.log(json);
         setresInfo(json.data);
     };
+
+    if(resInfo === null) return <MenuShimmerShimmer/>
 
     const { name, cuisines, costForTwoMessage, avgRating } =
         resInfo?.cards[1]?.card?.card?.info || {};

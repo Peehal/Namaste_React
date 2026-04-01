@@ -5,16 +5,7 @@
       "statusMessage": "done successfully",
       "cards": [
         {
-          "card": {
-            "card": {
-              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
-              "text": "Starbucks Coffee",
-              "headerStyling": {
-                "textColor": "text_Highest_Emphasis",
-                "textVariant": "header_H3_Black"
-              }
-            }
-          }
+          "card": {}
         },
         {
           "card": {
@@ -28,10 +19,7 @@
                 "locality": "Narayanakripa",
                 "areaName": "Jamshedpur Inner Circle",
                 "costForTwoMessage": "₹400 for two",
-                "cuisines": [
-                  "Beverages",
-                  "Cafe"
-                ],
+                "cuisines": ["Beverages", "Cafe"],
                 "avgRating": 4.6,
                 "totalRatingsString": "245 ratings",
                 "sla": {
@@ -62,12 +50,7 @@
                                 "category": "Top Picks",
                                 "costForTwo": "40000",
                                 "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
+                                "cuisines": ["Beverages", "Cafe", "Coffee", "Desserts"],
                                 "description": "A magical vanilla frappuccino inspired by Harry Potter with rich coffee, caramel notes, and a themed choco topper.",
                                 "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/3/24/e53257cb-a841-4ae0-a80b-e76ee22c0c15_2cc2ab12-2e95-4be1-bdf6-33178dce1141.jpg",
                                 "isVeg": 1,
@@ -89,12 +72,7 @@
                                 "category": "Top Picks",
                                 "costForTwo": "40000",
                                 "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
+                                "cuisines": ["Beverages", "Cafe", "Coffee", "Desserts"],
                                 "description": "Blended beverage with mocha sauce, chocolate chips, milk, and coffee topped with whipped cream.",
                                 "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/5d86e56d-2f4c-4d1e-8f3d-3d40f46e0a4e_javachip.jpg",
                                 "isVeg": 1,
@@ -103,33 +81,6 @@
                                   "aggregatedRating": {
                                     "rating": "4.5",
                                     "ratingCountV2": "98"
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          {
-                            "card": {
-                              "info": {
-                                "id": "197696725",
-                                "name": "Cold Coffee",
-                                "category": "Top Picks",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Classic cold coffee blended to creamy perfection and served chilled.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/coldcoffee.jpg",
-                                "isVeg": 1,
-                                "price": 28000,
-                                "ratings": {
-                                  "aggregatedRating": {
-                                    "rating": "4.4",
-                                    "ratingCountV2": "85"
                                   }
                                 }
                               }
@@ -153,12 +104,7 @@
                                 "category": "Hot Coffees",
                                 "costForTwo": "40000",
                                 "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
+                                "cuisines": ["Beverages", "Cafe", "Coffee"],
                                 "description": "Espresso shots topped with hot water for a rich, bold coffee experience.",
                                 "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/americano.jpg",
                                 "isVeg": 1,
@@ -180,12 +126,7 @@
                                 "category": "Hot Coffees",
                                 "costForTwo": "40000",
                                 "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
+                                "cuisines": ["Beverages", "Cafe", "Coffee"],
                                 "description": "Dark, rich espresso balanced with steamed milk and a light layer of foam.",
                                 "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/cappuccino.jpg",
                                 "isVeg": 1,
@@ -198,120 +139,102 @@
                                 }
                               }
                             }
-                          },
-                          {
-                            "card": {
-                              "info": {
-                                "id": "300003",
-                                "name": "Caffè Latte",
-                                "category": "Hot Coffees",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "A smooth and creamy blend of espresso and steamed milk.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/latte.jpg",
-                                "isVeg": 1,
-                                "price": 32000,
-                                "ratings": {
-                                  "aggregatedRating": {
-                                    "rating": "4.5",
-                                    "ratingCountV2": "94"
-                                  }
-                                }
-                              }
-                            }
                           }
                         ]
                       }
                     }
-                  },
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "menu2": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {}
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "2001001",
+                "name": "Domino's Pizza",
+                "city": "Jamshedpur",
+                "cloudinaryImageId": "dominos-pizza-image",
+                "locality": "Bistupur",
+                "areaName": "Bistupur",
+                "costForTwoMessage": "₹600 for two",
+                "cuisines": ["Pizzas", "Italian", "Fast Food"],
+                "avgRating": 4.4,
+                "totalRatingsString": "1.2K ratings",
+                "sla": {
+                  "deliveryTime": 25,
+                  "slaString": "20-25 MINS",
+                  "lastMileTravelString": "2.2 km"
+                }
+              }
+            }
+          }
+        },
+        {
+          "groupedCard": {
+            "cardGroupMap": {
+              "REGULAR": {
+                "cards": [
                   {
                     "card": {
                       "card": {
                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
-                        "title": "Cold Beverages",
+                        "title": "Recommended",
                         "itemCards": [
                           {
                             "card": {
                               "info": {
-                                "id": "400001",
-                                "name": "Iced Caffè Latte",
-                                "category": "Cold Beverages",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Smooth espresso and chilled milk served over ice.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/icedlatte.jpg",
+                                "id": "210001",
+                                "name": "Farmhouse Pizza",
+                                "category": "Recommended",
+                                "costForTwo": "60000",
+                                "costForTwoMessage": "₹600 for two",
+                                "cuisines": ["Pizzas", "Italian", "Fast Food"],
+                                "description": "Delightful combination of onion, capsicum, tomato & grilled mushroom.",
+                                "imageId": "farmhouse-pizza.jpg",
                                 "isVeg": 1,
-                                "price": 33000,
+                                "price": 45900,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.5",
+                                    "ratingCountV2": "320"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "210002",
+                                "name": "Margherita Pizza",
+                                "category": "Recommended",
+                                "costForTwo": "60000",
+                                "costForTwoMessage": "₹600 for two",
+                                "cuisines": ["Pizzas", "Italian", "Fast Food"],
+                                "description": "Classic delight with 100% real mozzarella cheese.",
+                                "imageId": "margherita-pizza.jpg",
+                                "isVeg": 1,
+                                "price": 23900,
                                 "ratings": {
                                   "aggregatedRating": {
                                     "rating": "4.4",
-                                    "ratingCountV2": "67"
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          {
-                            "card": {
-                              "info": {
-                                "id": "400002",
-                                "name": "Chocolate Frappuccino",
-                                "category": "Cold Beverages",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Rich chocolate blended with milk and ice, topped with whipped cream.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/chocofrappe.jpg",
-                                "isVeg": 1,
-                                "price": 39000,
-                                "ratings": {
-                                  "aggregatedRating": {
-                                    "rating": "4.7",
-                                    "ratingCountV2": "130"
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          {
-                            "card": {
-                              "info": {
-                                "id": "400003",
-                                "name": "Mango Dragonfruit Refresher",
-                                "category": "Cold Beverages",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "A fruity and refreshing drink with tropical mango notes.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/mango.jpg",
-                                "isVeg": 1,
-                                "price": 36000,
-                                "ratings": {
-                                  "aggregatedRating": {
-                                    "rating": "4.5",
-                                    "ratingCountV2": "74"
+                                    "ratingCountV2": "410"
                                   }
                                 }
                               }
@@ -325,57 +248,103 @@
                     "card": {
                       "card": {
                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
-                        "title": "Food",
+                        "title": "Sides",
                         "itemCards": [
                           {
                             "card": {
                               "info": {
-                                "id": "500001",
-                                "name": "Chocolate Brownie",
-                                "category": "Food",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Soft and rich chocolate brownie, perfect with coffee.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/brownie.jpg",
+                                "id": "220001",
+                                "name": "Garlic Breadsticks",
+                                "category": "Sides",
+                                "costForTwo": "60000",
+                                "costForTwoMessage": "₹600 for two",
+                                "cuisines": ["Fast Food"],
+                                "description": "Freshly baked garlic breadsticks with herbs.",
+                                "imageId": "garlic-bread.jpg",
                                 "isVeg": 1,
-                                "price": 18000,
-                                "ratings": {
-                                  "aggregatedRating": {
-                                    "rating": "4.6",
-                                    "ratingCountV2": "58"
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          {
-                            "card": {
-                              "info": {
-                                "id": "500002",
-                                "name": "Butter Croissant",
-                                "category": "Food",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Flaky and buttery croissant baked fresh.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/croissant.jpg",
-                                "isVeg": 1,
-                                "price": 21000,
+                                "price": 14900,
                                 "ratings": {
                                   "aggregatedRating": {
                                     "rating": "4.3",
-                                    "ratingCountV2": "49"
+                                    "ratingCountV2": "180"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "menu3": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {}
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "3001001",
+                "name": "Burger King",
+                "city": "Jamshedpur",
+                "cloudinaryImageId": "burger-king-image",
+                "locality": "Sakchi",
+                "areaName": "Sakchi",
+                "costForTwoMessage": "₹500 for two",
+                "cuisines": ["Burgers", "American", "Fast Food"],
+                "avgRating": 4.3,
+                "totalRatingsString": "980 ratings",
+                "sla": {
+                  "deliveryTime": 20,
+                  "slaString": "15-20 MINS",
+                  "lastMileTravelString": "1.8 km"
+                }
+              }
+            }
+          }
+        },
+        {
+          "groupedCard": {
+            "cardGroupMap": {
+              "REGULAR": {
+                "cards": [
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Burgers",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "310001",
+                                "name": "Whopper Veg",
+                                "category": "Burgers",
+                                "costForTwo": "50000",
+                                "costForTwoMessage": "₹500 for two",
+                                "cuisines": ["Burgers", "Fast Food"],
+                                "description": "Flame-grilled veg patty burger loaded with fresh veggies.",
+                                "imageId": "whopper-veg.jpg",
+                                "isVeg": 1,
+                                "price": 19900,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.4",
+                                    "ratingCountV2": "210"
                                   }
                                 }
                               }
@@ -384,25 +353,74 @@
                           {
                             "card": {
                               "info": {
-                                "id": "500003",
-                                "name": "Veg Club Sandwich",
-                                "category": "Food",
-                                "costForTwo": "40000",
-                                "costForTwoMessage": "₹400 for two",
-                                "cuisines": [
-                                  "Beverages",
-                                  "Cafe",
-                                  "Coffee",
-                                  "Desserts"
-                                ],
-                                "description": "Layered sandwich stuffed with fresh vegetables and cheese.",
-                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/1/sandwich.jpg",
+                                "id": "310002",
+                                "name": "Crispy Veg Burger",
+                                "category": "Burgers",
+                                "costForTwo": "50000",
+                                "costForTwoMessage": "₹500 for two",
+                                "cuisines": ["Burgers", "Fast Food"],
+                                "description": "Crispy veg patty with fresh lettuce and mayo.",
+                                "imageId": "crispy-veg-burger.jpg",
                                 "isVeg": 1,
-                                "price": 29000,
+                                "price": 12900,
                                 "ratings": {
                                   "aggregatedRating": {
-                                    "rating": "4.5",
-                                    "ratingCountV2": "64"
+                                    "rating": "4.2",
+                                    "ratingCountV2": "175"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                        "title": "Fries & Beverages",
+                        "itemCards": [
+                          {
+                            "card": {
+                              "info": {
+                                "id": "320001",
+                                "name": "French Fries",
+                                "category": "Fries & Beverages",
+                                "costForTwo": "50000",
+                                "costForTwoMessage": "₹500 for two",
+                                "cuisines": ["Fast Food"],
+                                "description": "Golden crispy fries seasoned to perfection.",
+                                "imageId": "fries.jpg",
+                                "isVeg": 1,
+                                "price": 9900,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.3",
+                                    "ratingCountV2": "145"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "card": {
+                              "info": {
+                                "id": "320002",
+                                "name": "Coca Cola",
+                                "category": "Fries & Beverages",
+                                "costForTwo": "50000",
+                                "costForTwoMessage": "₹500 for two",
+                                "cuisines": ["Beverages"],
+                                "description": "Chilled Coca Cola to go with your burger meal.",
+                                "imageId": "coke.jpg",
+                                "isVeg": 1,
+                                "price": 8000,
+                                "ratings": {
+                                  "aggregatedRating": {
+                                    "rating": "4.1",
+                                    "ratingCountV2": "120"
                                   }
                                 }
                               }
