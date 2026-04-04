@@ -5,43 +5,49 @@ class UserClass extends React.Component{
     constructor(props){
         super(props);
 
-        this.state = {
-            count0 : 0,
-            count2 : 2,
+        this.state ={
+            userInfo:{
+                name:"Dummy",
+                location:"Ranchi", 
+                avatar_url
+: 
+"https://avatars.githubusercontent.com/u/171475807?v=4"
+            }
         }
-
-        console.log("Child Constructor")
+        console.log(this.props.name+"Child Constructor")
     }
 
-    componentDidMount(){
-        console.log("Child Component did Mount")
+    async componentDidMount(){
+        console.log(this.props.name+" Component did Mount")
+
+        const data =await fetch("https://api.github.com/users/peehal");
+        const json = await data.json();
+        console.log(json);
+
+        this.setState({
+            userInfo:json
+        })  
+
+    }
+
+    componentDidUpdate(){
+        console.log(this.props.name+"Component did update")
+    }
+ 
+    componentWillUnmount(){
+         console.log(this.props.name+"Component unmounted")
     }
 
     render(){
 
-    const {name, Age} = this.props;
-    const {count0, count2} = this.state;
-
-    console.log("Child Render")
+    const {name, location, avatar_url} = this.state.userInfo;
+    console.log(this.props.name+"Child Render")
 
         return(
-             <div className="user-card">
+            <div className="user-card">
             <h2>Name - {name}</h2>
-            <p>Age - {Age}</p>
-
-
-            <p>count0 -{count0} </p>
-            <button onClick={() => {
-                this.setState ({
-                    count0 : this.state.count0 + 1,
-                })
-            }}>
-                Count Increment
-            </button>
-
-
-            <p>count2 -{count2} </p>
-            <p>Technical Skills known</p>
+            <p>Location - {location}</p>
+            <img src={avatar_url} alt="user" width="150" />
         </div>
         )
     }
