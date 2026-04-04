@@ -261,3 +261,9 @@
 .login:active {
   transform: scale(0.96);
 }
+
+.user-card{
+    padding: 20px;
+    margin: 2px;
+    border:1px solid palevioletred ;
+}
