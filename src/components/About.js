@@ -21,6 +21,7 @@ class About extends Component{
                 <h1>About</h1>
                 <h2>Hello everyone</h2>
 
+                <User />
                 <UserClass name ={"first"} Age={"22"} />
 
             </div>

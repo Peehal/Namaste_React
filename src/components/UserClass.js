@@ -29,7 +29,7 @@ class UserClass extends React.Component{
         })  
 
     }
-
+ 
     componentDidUpdate(){
         console.log(this.props.name+"Component did update")
     }
