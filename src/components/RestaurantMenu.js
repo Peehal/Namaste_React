@@ -51,23 +51,16 @@
 
 // export default RestaurantMenu;
 
-import { useState, useEffect } from "react";
 import "./RestaurantMenu.css";
 import MenuShimmerShimmer from "./MenuShimmer";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
+import { useParams } from "react-router";
 
 const RestaurantMenu = () => {
-    const [resInfo, setresInfo] = useState(null);
 
-    useEffect(() => {
-        fetchMenu();
-    }, []);
+    const {resId} = useParams();
 
-    const fetchMenu = async () => {
-        const data = await fetch("http://localhost:3001/menu2");
-        const json = await data.json();
-        console.log(json);
-        setresInfo(json.data);
-    };
+    const resInfo = useRestaurantMenu(resId);
 
     if(resInfo === null) return <MenuShimmerShimmer/>
 
