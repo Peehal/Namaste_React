@@ -267,3 +267,195 @@
     margin: 2px;
     border:1px solid palevioletred ;
 }
+
+.menu-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.restaurant-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.restaurant-name {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1c1c1c;
+}
+
+.restaurant-info {
+  font-size: 16px;
+  color: #686b78;
+  margin-bottom: 8px;
+}
+
+.restaurant-rating {
+  font-size: 18px;
+  color: #267e3e;
+  font-weight: 700;
+}
+
+.menu-section {
+  margin-top: 20px;
+}
+
+.menu-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.menu-title-row h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1c1c1c;
+}
+
+.arrow {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e9e9eb;
+  gap: 20px;
+}
+
+.menu-item-left {
+  flex: 1;
+}
+
+.veg-icon {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.item-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0 0 8px;
+}
+
+.item-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 14px;
+}
+
+.item-desc {
+  font-size: 18px;
+  color: #686b78;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.menu-item-right {
+  width: 180px;
+  position: relative;
+  text-align: center;
+}
+
+.item-image {
+  width: 170px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+.add-btn {
+  background-color: white;
+  color: #1ba672;
+  font-size: 24px;
+  font-weight: 800;
+  border: 1px solid #d4d5d9;
+  border-radius: 14px;
+  padding: 14px 40px;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.customisable {
+  font-size: 14px;
+  color: #7e808c;
+  margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 20px 14px;
+  }
+
+  .restaurant-name {
+    font-size: 26px;
+  }
+
+  .menu-title-row h2 {
+    font-size: 24px;
+  }
+
+  .menu-item-card {
+    flex-direction: column;
+  }
+
+  .menu-item-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .item-image {
+    width: 150px;
+    height: 130px;
+  }
+
+  .add-btn {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    padding: 12px 32px;
+    font-size: 20px;
+  }
+
+  .customisable {
+    margin-top: 8px;
+  }
+
+  .item-name {
+    font-size: 22px;
+  }
+
+  .item-price {
+    font-size: 18px;
+  }
+
+  .item-desc {
+    font-size: 16px;
+  }
+}

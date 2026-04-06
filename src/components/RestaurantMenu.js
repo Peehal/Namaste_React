@@ -51,7 +51,6 @@
 
 // export default RestaurantMenu;
 
-import "./RestaurantMenu.css";
 import MenuShimmerShimmer from "./MenuShimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import { useParams } from "react-router";

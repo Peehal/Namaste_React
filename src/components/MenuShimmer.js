@@ -1,5 +1,3 @@
-import "./RestaurantMenu.css";
-
 const MenuShimmer = () => {
     return (
         <div className="menu-page">
