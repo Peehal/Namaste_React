@@ -1,4 +1,6 @@
-* {
+@import "tailwindcss";
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -116,7 +118,7 @@
     gap: 30px;
 }
 .res-card {
-    /* width: 280px; */
+    width: 280px;
     border-radius: 18px;
     overflow: hidden;
     background-color: white;
@@ -170,7 +172,7 @@
 
 /* ================= SHIMMER ================= */
 
-.shimmer-btn {
+/* .shimmer-btn {
   width: 220px;
   height: 45px;
   margin: 20px auto;
@@ -458,4 +460,4 @@
   .item-desc {
     font-size: 16px;
   }
-}
+} */ 
