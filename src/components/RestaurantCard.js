@@ -12,14 +12,14 @@ const RestaurantCard = ({ resData }) => {
   } = resData;
 
   return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+    <div className="w-full max-w-[250] rounded-xl  shadow-md hover:scale-95 transition duration-300 p-3 cursor-pointer bg-gray-50" >
       <img
-        className="res-logo"
+        className="w-full h-40 object-cover rounded-lg"
         src={CON_URL + cloudinaryImageId}
         alt="restaurant"
       />
 
-      <h3>{name}</h3>
+      <h3 className="font-bold text-lg mt-3 py-0.5">{name}</h3>
 
       <h4>{cuisines?.join(", ")}</h4>
 
