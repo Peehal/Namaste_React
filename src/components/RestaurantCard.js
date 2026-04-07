@@ -32,4 +32,18 @@ const RestaurantCard = ({ resData }) => {
   );
 };
 
+// Higher Order Component
+export const IsOpenLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <label className="absolute bg-green-500 text-white px-2 py-1 rounded-md m-2 z-10 text-sm font-semibold">
+          Open
+        </label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCard;

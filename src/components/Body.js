@@ -1,7 +1,8 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { IsOpenLabel } from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
+
 
 
 const Body = () => {
@@ -10,6 +11,11 @@ const Body = () => {
   const [allrestaurant, setallrestaurant] = useState([]);
 
   const [searchText, setsearchText] = useState("");
+
+const IsOpenCard = IsOpenLabel(RestaurantCard);
+
+
+  console.log(listOfRestaurants);
 
   useEffect(() => {
     fetchData();
@@ -57,7 +63,7 @@ const Body = () => {
           }}
         ></input>
         <button
-        className="px-4 py-1 bg-pink-100 cursor-pointer rounded-lg "
+          className="px-4 py-1 bg-pink-100 cursor-pointer rounded-lg "
           onClick={() => {
             const filteredRestaurant = listOfRestaurants.filter((res) =>
               res?.info?.name?.toLowerCase().includes(searchText.toLowerCase()),
@@ -84,13 +90,21 @@ const Body = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-4">
         {Array.isArray(allrestaurant) &&
-          allrestaurant.map((restaurant) => (
-            <RestaurantCard
-              key={restaurant?.info?.id}
-              resData={restaurant?.info}
-            />
-          ))}
+          allrestaurant.map((restaurant) =>
+            restaurant?.info?.isOpen ? (
+              <IsOpenCard
+                key={restaurant?.info?.id}
+                resData={restaurant?.info}
+              />
+            ) : (
+              <RestaurantCard
+                key={restaurant?.info?.id}
+                resData={restaurant?.info}
+              />
+            )
+          )}
       </div>
+
     </div>
   );
 };
