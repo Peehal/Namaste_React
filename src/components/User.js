@@ -5,15 +5,15 @@ const User = ({ name }) => {
     const [count0] = useState(0);
     const [count2] = useState(2);
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            console.log("Updated on every second");
-        }, 1000);
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         console.log("Updated on every second");
+    //     }, 1000);
 
-        return () => {
-            clearInterval(timer);
-        };
-    }, []);
+    //     return () => {
+    //         clearInterval(timer);
+    //     };
+    // }, []);
 
     return (
         <div className="user-card">

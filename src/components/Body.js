@@ -1,6 +1,7 @@
 import RestaurantCard, { IsOpenLabel } from "./RestaurantCard";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import UserContext from "../utils/UserContext";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 
@@ -34,7 +35,7 @@ const IsOpenCard = IsOpenLabel(RestaurantCard);
       setListOfRestaurant(restaurants);
       setallrestaurant(restaurants);
     } catch (error) {
-      console.error("Fetch failed:", error);
+      // console.error("Fetch failed:", error);
     }
   };
 
@@ -43,6 +44,8 @@ const IsOpenCard = IsOpenLabel(RestaurantCard);
   if (OnlineStatus == false) {
     return <h1>OOps Check your Internet Connection</h1>
   }
+
+  const {setUserName, loggedInUser} = useContext(UserContext);
 
 
   return listOfRestaurants?.length === 0 ? (
@@ -83,6 +86,13 @@ const IsOpenCard = IsOpenLabel(RestaurantCard);
         >
           Top Rated Restaurants
         </button>
+
+        <input
+          type="text"
+          className=" cursor-pointer border border-solid border-black p-1"
+          value= {loggedInUser}
+          onChange={(e) => setUserName(e.target.value)}
+        ></input>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-4">

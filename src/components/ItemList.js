@@ -1,7 +1,5 @@
 const ItemList = ({ items }) => {
 
-    console.log(items)
-
     return (
         <div className="space-y-6">
             {items.map((item) => {
