@@ -1,4 +1,14 @@
+import { useDispatch } from "react-redux";
+import { addItems } from "../utils/CartSlice";
+
 const ItemList = ({ items }) => {
+
+    const dispatch = useDispatch();
+
+    const handleAddItems =(item) => {
+        // Dispatch an action
+        dispatch(addItems(item));
+    }
 
     return (
         <div className="space-y-6">
@@ -29,7 +39,11 @@ const ItemList = ({ items }) => {
                                 }
                                 alt={item?.card?.info?.name}
                             />
-                            <button className="absolute left-1/2 -translate-x-1/2 bottom-[-10] bg-white text-green-600 font-bold px-6 py-1 rounded-lg shadow-md border border-gray-200">
+                            <button className="absolute left-1/2 -translate-x-1/2 bottom-[-10] bg-white text-green-600 font-bold px-6 py-1 rounded-lg shadow-md border border-gray-200 cursor-pointer"
+                            
+                            onClick={() => handleAddItems(item)}
+                            
+                            >
                                 ADD
                             </button>
                         </div>
