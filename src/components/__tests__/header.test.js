@@ -7,7 +7,7 @@ import appStore from "../../utils/appStore";
 
 it("should load Header Component with a Login Button", () => {
     render(
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Provider store={appStore}>
                 <Header />
             </Provider>
@@ -22,7 +22,7 @@ it("should load Header Component with a Login Button", () => {
 
 it("should load Header Component with a Cart", () => {
     render(
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Provider store={appStore}>
                 <Header />
             </Provider>
@@ -36,7 +36,7 @@ it("should load Header Component with a Cart", () => {
 
 it("Should Change the Login Button to Logout On Click", () => {
     render(
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Provider store={appStore}>
                 <Header />
             </Provider>
