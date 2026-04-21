@@ -54,6 +54,7 @@ const IsOpenCard = IsOpenLabel(RestaurantCard);
     <div className="body">
       <div className="flex justify-center-safe items-center gap-4  search p-3 m-2 ">
         <input
+          data-testid="searchInput"
           type="text"
           className=" cursor-pointer border border-solid border-black"
           placeholder="Cafe..."
